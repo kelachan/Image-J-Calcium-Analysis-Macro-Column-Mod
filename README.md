@@ -1,5 +1,5 @@
 # Image-J-Calcium-Analysis-Macro-Column-Mod
-Modified ImageJ calcium analysis macro to accommodate column scaling. Image preprocessing, cell segmentation into ROIs, application of different intensity thresholds, and .xlsx results included. Distance from column center and distance from column edge added to results in addition to standard intensity calculations.
+Modified ImageJ calcium analysis macro to accommodate column scaling. Image preprocessing, cell segmentation into ROIs, application of different intensity thresholds, and .xlsx results included. Distance from column center and distance from column edge added to results in addition to standard intensity calculations. Requires a separate column image, of the same resolution, scale, and column position as the quantification image. 
 
 **Required Fiji Plugins**
 
@@ -14,12 +14,10 @@ Go to Help → Update... Click Manage Update Sites, and enable CSBDeep and Templ
 
 **Use of Macro**
 
-1. Download the macro file, F_Fo_macro_combined.ijm from this repository.
+1. Download the macro file, F_Fo_macro_columns_pillar.ijm from this repository.
 2. Open Fiji, then go to: Plugins → Macros → Run… and select the macro file.
 3. Select the image to run the analysis on. 
 4. Follow the on-screen dialogs.
-
-You can try the macro using the sample time-lapse .czi image provided here: https://drive.google.com/drive/u/2/folders/12Kj8ol_rpForezNu8eSBeFmZKQFcjKAJ
 
 
 When working in Windows, users should avoid using system-protected directories such as C:\Users, C:\Program Files, or the Fiji installation directory for storing input or output data. It is recommended to use an external folder to avoid write permission errors. All analysis outputs - ROI ZIP files for reference, a ΔF/F₀ CSV table, and graph images - are saved automatically to the same directory as the input image file.
